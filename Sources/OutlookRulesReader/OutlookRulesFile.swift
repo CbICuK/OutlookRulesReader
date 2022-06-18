@@ -24,7 +24,7 @@ public struct OutlookRulesFile: CustomDebugStringConvertible {
         self.footer = RulesFooter()
     }
     
-    public init(data: Data) throws {
+    public init(data: NSData) throws {
         var dataStream = DataStream(data)
         try self.init(dataStream: &dataStream)
     }
